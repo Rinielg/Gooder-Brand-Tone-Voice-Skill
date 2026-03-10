@@ -439,5 +439,5 @@ Proprietary. See [LICENSE](LICENSE) for terms.
 ---
 
 <p align="center">
-  Built by <strong>Gooder</strong> — making every word work harder for your brand.
+  Built by <strong>Gooder</strong>.
 </p>
