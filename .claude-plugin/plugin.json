@@ -1,10 +1,68 @@
 {
   "name": "gooder",
-  "description": "Gooder brand voice skills: Train your brand from real documents, auto-validate every piece of copy, and generate UX writing grounded in behavioral science. Three skills, one consistent voice.",
-  "version": "1.0.0",
+  "description": "Brand Voice Training & Content Generation. Train your brand from real documents, generate on-brand copy across every channel, validate automatically with weighted scoring, and write UX copy grounded in behavioral science.",
+  "version": "2.0.0",
   "author": {
     "name": "Gooder"
   },
-  "license": "proprietary",
-  "keywords": ["brand-voice", "tone", "ux-writing", "copywriting"]
+  "repository": "https://github.com/Rinielg/gooder",
+  "keywords": [
+    "brand-voice",
+    "tone-of-voice",
+    "content-generation",
+    "ux-writing",
+    "copywriting",
+    "brand-consistency",
+    "tone-validation",
+    "audience-engine",
+    "platform-rules",
+    "claude-skill"
+  ],
+  "skills": [
+    {
+      "name": "gooder-brand-tone-voice",
+      "path": "gooder-brand-tone-voice/SKILL.md",
+      "description": "Train brand voice from documents, URLs, or pasted text. Generates three brand-specific skills per brand.",
+      "type": "base"
+    },
+    {
+      "name": "gooder-tone-validator",
+      "path": "gooder-tone-validator/SKILL.md",
+      "description": "Score copy across 8 weighted dimensions. Auto-runs after generation.",
+      "type": "base"
+    },
+    {
+      "name": "gooder-ux-guide",
+      "path": "gooder-ux-guide/SKILL.md",
+      "description": "UX writing framework with 14 component patterns, behavioral psychology, and brand voice layering.",
+      "type": "base"
+    }
+  ],
+  "generated_skills": [
+    {
+      "name": "gooder-voice-[brand]",
+      "description": "Trained brand voice profile — pillars, archetype, spectrum, tone map, golden examples, vocabulary, headline formulas.",
+      "generated_by": "gooder-brand-tone-voice"
+    },
+    {
+      "name": "gooder-audience-[brand]",
+      "description": "Audience engine — pre-populated segments with tone adjustments, vocabulary shifts, and example copy per tier.",
+      "generated_by": "gooder-brand-tone-voice"
+    },
+    {
+      "name": "gooder-platform-[brand]",
+      "description": "Platform rules — channel constraints, character limits, format requirements with brand-specific overrides.",
+      "generated_by": "gooder-brand-tone-voice"
+    }
+  ],
+  "channels": [
+    "email",
+    "sms",
+    "push",
+    "whatsapp",
+    "in-app-ux",
+    "social",
+    "advertising",
+    "landing-pages"
+  ]
 }
